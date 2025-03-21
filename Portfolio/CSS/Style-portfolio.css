@@ -1,12 +1,12 @@
-html{
+html {
     scroll-behavior: smooth;
 }
 
-html, body{
+html, body {
     height: 100%;
 }
 
-body{
+body {
     background-color: black;
     color: white;
     display: flex;
@@ -17,24 +17,25 @@ body{
     padding: 0;
 }
 
-header{
+header {
     padding-top: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
-h1 a{
+h1 a {
     text-decoration: none;
     color: white;
     font-size: 50px;
 }
 
-h1 a:hover{
+h1 a:hover {
     color: #5a5252;
 }
 
-nav{
+.navbar {
     display: flex;
     justify-content: center;
     padding-top: 1%;
@@ -42,20 +43,54 @@ nav{
     width: 100%;
 }
 
+
+.nav-toggle {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    cursor: pointer; 
+    z-index: 1001; 
+    top: 20px;
+    right: 20px;
+    margin: 0;
+    padding: 15px;
+}
+
+
+.nav-toggle-label {
+    display: none;
+    cursor: pointer;
+    position: fixed; 
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    padding: 15px;
+}
+
+.nav-toggle-label span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
 nav ul {
-    display: flex; 
-    padding: 0; 
-    margin: 0; 
+    display: flex;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li {
-    list-style: none; 
-    margin-right: 20px; 
+    list-style: none;
+    margin-right: 20px;
 }
 
 nav ul li a {
     color: white;
-    padding: 10px 15px; 
+    padding: 10px 15px;
     text-decoration: none;
     display: block;
 }
@@ -64,38 +99,37 @@ nav ul li a:hover {
     color: #5a5252;
 }
 
-footer{
+footer {
     display: flex;
     align-items: center;
     flex-direction: column;
     margin-top: auto;
 }
 
-footer a{
+footer a {
     text-decoration: none;
     color: white;
 }
 
-#footer{
+#footer {
     font-size: 11px;
 }
 
-/*Style CSS pour page Contact*/
-
-main{
+/* Style CSS pour page Contact */
+main {
     display: flex;
     align-items: center;
     flex-direction: column;
     flex-grow: 1;
 }
 
-.contact h2{
+.contact h2 {
     font-size: 30px;
     padding-top: 5%;
     padding-bottom: 5%;
 }
 
-.contact .contact-div p{
+.contact .contact-div p {
     font-size: 20px;
     font-weight: bold;
     list-style: none;
@@ -106,12 +140,12 @@ main{
     display: block;
 }
 
-.contact .contact-div p a{
+.contact .contact-div p a {
     text-decoration: none;
     color: black;
 }
 
-.contact .contact-div p:hover{
+.contact .contact-div p:hover {
     background-color: #b5adad;
 }
 
@@ -128,84 +162,86 @@ main{
     opacity: 0;
 }
 
-/* Style du texte de remplacement */
 #mail:hover::after,
 #telephone:hover::after {
-    content: attr(data-hover); 
+    content: attr(data-hover);
     position: absolute;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     color: black;
 }
 
-/*Style CSS pour page A propos*/
+#mail .mail_deux{
+    color: aqua;
+}
 
-.about h2{
+/* Style CSS pour page A propos */
+.about h2 {
     font-size: 30px;
     padding-top: 5%;
     padding-bottom: 5%;
 }
 
-.section1{
+.section1 {
     width: 50%;
 }
 
-.section1 h2{
+.section1 h2 {
     display: flex;
     justify-content: center;
     padding-bottom: 3%;
 }
 
-.resume{
+.resume {
     font-size: 17px;
 }
 
-/*Style CSS pour page Accueil*/
-
-
-
-/*Style CSS pour page Portfolio*/
-
-.portfolio{
+/* Style CSS pour page Portfolio */
+.portfolio {
     padding-top: 3%;
-    align-content: center;
-}
-.portfolio div{
-    display: flex;
-}
-
-.portfolio div figure{
-    flex: 33.33%;
-    padding: 5px;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 20px;
 }
 
-figure img{
-    width: 400px;
-    height: 200px;
+
+.portfolio figure {
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-figure{
+figure img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+figure {
     position: relative;
+    margin: 0;
 }
 
-figcaption{
+figcaption {
     position: absolute;
     height: 50%;
-    min-height: 80px;
     bottom: 0;
-    background-color:rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
-    max-width: 400px;
     font-size: 1rem;
-    animation-name: color-change;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    visibility:hidden;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
-figure:hover figcaption{
+figure:hover figcaption {
     visibility: visible;
 }
