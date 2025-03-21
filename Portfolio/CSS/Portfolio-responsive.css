@@ -1,0 +1,82 @@
+
+/* Responsive design pour téléphone - sans menu hamburger */
+@media screen and (max-width: 768px) {
+    /* Styles généraux */
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
+    header {
+        padding-top: 20px;
+        padding-bottom: 15px;
+    }
+    
+    h1 a {
+        font-size: 32px;
+        text-align: center;
+    }
+    
+    /* Navigation en colonne */
+    nav {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 100%;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    nav ul li a {
+        padding: 10px;
+        width: 100%;
+        border-bottom: 1px solid #333;
+    }
+    
+    /* Page Contact responsive */
+    .contact .contact-div p {
+        padding: 15px;
+        width: 80%;
+        margin: 0 auto 30px auto;
+    }
+    
+    /* Page A propos responsive */
+    .section1 {
+        width: 90%;
+        padding: 0 15px;
+    }
+    
+    /* Page Portfolio responsive */
+    .portfolio div {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .portfolio div figure {
+        flex: 100%;
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    figure img {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+    }
+    
+    figcaption {
+        max-width: 100%;
+    }
+    
+}
