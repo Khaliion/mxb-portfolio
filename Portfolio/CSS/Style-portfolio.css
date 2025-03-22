@@ -10,10 +10,6 @@ body {
     background-color: black;
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
 }
 
 header {
@@ -21,7 +17,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
 }
 
 header h1 a {
@@ -263,7 +258,13 @@ figure:hover figcaption {
     text-shadow: 0 0 4px #facefa, 0 0 5px #facefa, 0 0 10px #facefa, 0 0 10px #facefa;
 }
 
+.color-change2{
+    color: grey;
+}
+
 .image-index img{
-    margin-right: 50px;
-    height: 90%;
+    padding-top: 1%;
+    margin-right: 30px;
+    margin-left: 30px;
+    height: 400px;
 }
