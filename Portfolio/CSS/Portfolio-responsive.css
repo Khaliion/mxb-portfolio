@@ -2,16 +2,26 @@
 /* Media Queries for Responsive Design */
 
 @media screen and (max-width: 1024px) {
-    h1 a {
-        font-size: 40px;
+
+    body{
+        max-width: 95%;
+    }
+
+    header h1 a{
+        font-size: 30px;
     }
 
     nav {
         font-size: 18px;
     }
 
-    .section1 {
-        width: 70%;
+    .section1 h2{
+        font-size: 40px;
+    }
+
+    .section1 .resume{
+        padding-top: 10%;
+        font-size: 25px;
     }
 
     .portfolio {
@@ -23,6 +33,25 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;
         padding: 20px;
+    }
+
+    figcaption {
+        position: absolute;
+        height: 50%;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+
+    figcaption h2{
+        font-size: 25px;
+    }
+
+    figcaption p{
+        font-size: 18px;
     }
     
     .contact .contact-div p {
@@ -52,13 +81,19 @@
     align-items: center;
     }
 
-    .back-to{
-        visibility: hidden;
-    }
-
     .portfolio div {
         grid-template-columns: repeat(2, 1fr);
         align-items: start;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #footer{
+        font-size: 15px;
     }
 }
 
@@ -101,6 +136,7 @@
         visibility: visible;
     }
 
+
     /* Animation du hamburger */
     .nav-toggle:checked + .nav-toggle-label span:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
@@ -137,32 +173,58 @@
         padding: 0 20px;
     }
 
+    header{
+        padding-bottom: 5%;
+    }
+
+
     .portfolio {
-        padding-top: 3%;
         width: 100%;
         max-width: 1400px;
         margin: 0 auto;
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: 40px;
         padding: 20px;
+    }
+
+    figcaption {
+        height: 50%;
+        width: 100%;
+    }
+
+    figcaption h2{
+        font-size: 18px;
+        margin-bottom: 3px;
+    }
+
+    figcaption p{
+        font-size: 14px;
     }
     
 
     figure img {
-        height: 250px;
+        height: 200px;
     }
 
-    .contact h2,
-    .about h2 {
-        font-size: 24px;
+    .contact{
+        padding-left: 5%;
+        padding-top: 10%;
     }
-
+    .contact h2 {
+        font-size: 30px;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    
     .contact .contact-div p {
-        font-size: 16px;
-        padding: 12px 30px;
-        margin-bottom: 30px;
-        text-align: center;
+        font-size: 20px;
+        padding: 15px 20px;
+    }
+    
+    .contact .contact-div p a {
+        text-decoration: none;
+        color: black;
     }
 
     .resume {
@@ -172,22 +234,44 @@
 }
 
 /* Small Mobile Devices */
+
 @media screen and (max-width: 480px) {
+   
+    body{
+        max-width: 90%;
+    }
+    
     header {
-        padding-top: 15%;
+        padding-top: 10%;
+        padding-left: 5%;
     }
 
-    h1 a {
-        font-size: 28px;
+    header h1 a{
+        font-size: 18px;
     }
 
     .navbar ul {
         width: 85%;
     }
 
+    .contact{
+        padding-left: 10%;
+        padding-top: 15%;
+    }
+    .contact h2 {
+        font-size: 15px;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    
     .contact .contact-div p {
-        padding: 10px 20px;
-        font-size: 14px;
+        font-size: 12px;
+        padding: 15px 20px;
+    }
+    
+    .contact .contact-div p a {
+        text-decoration: none;
+        color: black;
     }
 
     #mail{
@@ -215,8 +299,27 @@
 
     #footer {
         font-size: 10px;
-        text-align: center;
         padding: 0 10px;
+        padding-left: 15%;
+    }
+
+    figcaption {
+        position: absolute;
+        height: 50%;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+
+    figcaption h2{
+        font-size: 15px;
+    }
+
+    figcaption p{
+        font-size: 12px;
     }
 
     figure img {
@@ -226,5 +329,16 @@
     .portfolio div {
         gap: 30px;
         padding: 15px;
+    }
+
+    .portfolio {
+        padding-top: 3%;
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 20px;
     }
 }
