@@ -9,12 +9,11 @@ html, body {
 body {
     background-color: black;
     color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -99,6 +98,13 @@ nav ul li a:hover {
     color: #5a5252;
 }
 
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+}
+
 footer {
     display: flex;
     align-items: center;
@@ -116,12 +122,6 @@ footer a {
 }
 
 /* Style CSS pour page Contact */
-main {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex-grow: 1;
-}
 
 .contact h2 {
     font-size: 30px;
@@ -179,6 +179,7 @@ main {
 }
 
 /* Style CSS pour page A propos */
+
 .about h2 {
     font-size: 30px;
     padding-top: 5%;
@@ -200,6 +201,7 @@ main {
 }
 
 /* Style CSS pour page Portfolio */
+
 .portfolio {
     padding-top: 3%;
     width: 100%;
@@ -244,4 +246,24 @@ figcaption {
 
 figure:hover figcaption {
     visibility: visible;
+}
+
+
+/*CSS pour Page Index*/
+
+
+
+.h2-home{
+    padding-top: 2%;
+    font-size: 50px;
+}
+
+#color-change1{
+    color: grey;
+    text-shadow: 0 0 4px #facefa, 0 0 5px #facefa, 0 0 10px #facefa, 0 0 10px #facefa;
+}
+
+.image-index img{
+    margin-right: 50px;
+    height: 90%;
 }

@@ -1,3 +1,5 @@
+/*Header disparait quand on ouvre le menu hamburger*/
+
 const navToggle = document.getElementById('nav-toggle');
 const header = document.querySelector('header');
 
@@ -12,3 +14,4 @@ navToggle.addEventListener('change', () => {
         header.style.visibility = 'visible';
     }
 });
+
