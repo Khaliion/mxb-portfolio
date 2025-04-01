@@ -1,45 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 body {
     display: flex;
-    flex-direction: column;
-    box-shadow: 30px 0px 40px rgb(196,196,196), -30px 0px 40px  rgb(196,196,196);
+    flex-direction: row;
+    box-shadow: 30px 0px 40px rgb(196,196,196), -30px 0px 40px rgb(196,196,196);
     margin: auto;
     max-width: 900px;
     background-color: #e1ddddec;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-
+/* Left column */
 .left-column {
-    width: 100%;
+    width: 30%;
     background-color: #670886;
     color: #ffffff;
     display: flex;
-    flex-direction: column; 
-
+    flex-direction: column;
 }
 
-.mail-to{
-    color: rgb(181, 172, 172);
-}
-
-.left-content{
+.left-content {
     flex: 1;
 }
 
-/* Right column */
-.right-column {
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    padding: 20px;
+.mail-to {
+    color: rgb(181, 172, 172);
+}
+
+.lien {
+    color: white;
+    text-decoration: none;
 }
 
 /* Profile picture */
@@ -51,13 +43,6 @@ body {
     display: block;
     object-fit: cover;
     border: 5px solid white;
-}
-
-/* Colonne gauche */
-
-.lien{
-    color: white;
-    text-decoration: none;
 }
 
 .section-header {
@@ -125,15 +110,21 @@ body {
     margin: 5px;
 }
 
-/* Right column styles */
+/* Right column */
+.right-column {
+    width: 70%;
+    background-color: rgb(255, 255, 255);
+    padding: 40px;
+    border-left: 1px black solid;
+}
 
 .name {
-    font-size: 28px;
+    font-size: 36px;
     margin-bottom: 5px;
 }
 
 .name span {
-    color: #670886; /*Couleur prénom*/
+    color: #670886; /* Couleur pour mise en évidence du prénom */
 }
 
 .title {
@@ -149,16 +140,15 @@ body {
     bottom: -3px;
     width: 100%;
     height: 2px;
-    background-color: #020202; /*Couleur du trait*/
+    background-color: #020202; /* Ligne de séparation sous le titre */
 }
 
-.color_grey{ /*Modif du H2*/
-    font-size: 16px;
+.color_grey {
+    font-size: 18px;
     color: #666;
 }
 
 /* Section styles */
-
 .section {
     margin-top: 15%;
     margin-bottom: 30px;
@@ -168,12 +158,12 @@ body {
     display: flex;
     position: relative;
     align-items: center;
-    font-size: 22px;
+    font-size: 24px;
     margin-bottom: 20px;
     font-weight: bold;
 }
 
-.section-title:after{
+.section-title:after {
     content: '';
     position: absolute;
     left: 0;
@@ -184,7 +174,6 @@ body {
 }
 
 /* Education and Experience items */
-
 .timeline-item {
     display: flex;
     margin-bottom: 30px;
@@ -206,7 +195,7 @@ body {
     left: 4px;
 }
 
-.fa-dot-circle{
+.fa-dot-circle {
     color: #670886;
 }
 
@@ -215,26 +204,24 @@ body {
     flex-grow: 1;
 }
 
-.timeline-date {
+.timeline-date, .timeline-place {
     font-size: 14px;
     color: #666;
     margin-bottom: 5px;
 }
 
 .timeline-place {
-    font-size: 14px;
-    color: #666;
     font-style: italic;
 }
 
 .timeline-title {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     margin: 5px 0;
 }
 
 .timeline-subtitle {
-    font-size: 15px;
+    font-size: 16px;
     color: #666;
     margin-bottom: 10px;
 }
@@ -248,12 +235,12 @@ body {
 /* Recommendations */
 .recommendations {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .recommendation {
-    width: 100%;
-    margin-bottom: 20px;
+    width: 48%;
 }
 
 .recommendation p {
@@ -264,4 +251,3 @@ body {
 .recommender-name {
     font-weight: bold;
 }
-

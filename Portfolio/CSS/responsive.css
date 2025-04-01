@@ -1,68 +1,61 @@
 
-/*Responsive telephone et ordinateur*/
-
-@media screen and (min-width: 760px) {
+/* Media query for smartphones */
+@media screen and (max-width: 759px) {
   body {
-      flex-direction: row;
+      flex-direction: column;
   }
   
-  .left-column {
-      width: 30%;
+  .left-column, .right-column {
+      width: 100%;
   }
   
   .right-column {
-      width: 70%;
-      border-left: 1px black solid;
-      padding: 40px;
+      border-left: none;
+      padding: 20px;
   }
   
   .name {
-      font-size: 36px;
-  }
-  
-  .section-title {
-      font-size: 24px;
-  }
-  
-  .recommendations {
-      flex-direction: row;
-      justify-content: space-between;
-  }
-  
-  .recommendation {
-      width: 48%;
-      margin-bottom: 0;
+      font-size: 28px;
   }
   
   .color_grey {
-      font-size: 18px;
+      font-size: 16px;
+  }
+  
+  .section-title {
+      font-size: 22px;
   }
   
   .timeline-title {
-      font-size: 18px;
+      font-size: 16px;
   }
   
   .timeline-subtitle {
-      font-size: 16px;
+      font-size: 15px;
   }
-
+  
+  .recommendations {
+      flex-direction: column;
+  }
+  
+  .recommendation {
+      width: 100%;
+      margin-bottom: 20px;
+  }
 }
-/*
-/*Ajouter css pour le print format A4*/
 
+/* Print styles */
 @media print {
-
   @page {
-    size: A4 portrait;
-    margin: 5mm; 
+      size: A4 portrait;
+      margin: 5mm; 
   }
   
   body {
-    width: 210mm;
-    height: 297mm;
-    margin: 0;
-    box-shadow: none;
-    flex-direction: row;
+      width: 210mm;
+      height: 297mm;
+      margin: 0;
+      box-shadow: none;
   }
   
   .left-column {
@@ -70,115 +63,101 @@
   }
   
   .right-column {
-    width: 65%; 
-    padding: 10px;
+      width: 65%; 
+      padding: 10px;
   }
   
-
   .profile-img {
-    width: 100px; 
-    height: 100px;
-    margin: 15px auto;
-    border: 3px solid white;
+      width: 100px; 
+      height: 100px;
+      margin: 15px auto;
+      border: 3px solid white;
   }
   
- 
   .section {
-    margin-top: 50px;
-    margin-bottom: 30px;
-    page-break-inside: avoid;
+      margin-top: 50px;
+      margin-bottom: 30px;
+      page-break-inside: avoid;
   }
   
-
-  .section-header{ 
-      margin-top:35px;
+  .section-header { 
+      margin-top: 35px;
   }
-
+  
   .section-title {
-    margin-bottom: 10px;
-    font-size: 18px;
+      margin-bottom: 10px;
+      font-size: 18px;
   }
   
   .timeline-item {
-    margin-bottom: 10px; 
-    margin-top: 30px;
+      margin-bottom: 10px; 
+      margin-top: 30px;
+      page-break-inside: avoid;
   }
-
-  .header{
+  
+  .header {
       margin-top: 20px;
   }
   
-  /* Ajuster les tailles de police */
+  /* Ajustements des tailles de police pour l'impression */
   .name {
-    font-size: 25px;
+      font-size: 25px;
   }
   
   .color_grey {
-    font-size: 15px;
+      font-size: 15px;
   }
   
   .about-me {
-    font-size: 11px;
-    padding: 10px;
+      font-size: 11px;
+      padding: 10px;
   }
   
   .contact-info {
-    padding: 10px;
+      padding: 10px;
   }
   
   .contact-info p {
-    margin-bottom: 5px;
-    font-size: 11px;
+      margin-bottom: 5px;
+      font-size: 11px;
   }
   
   .hobbies {
-    padding: 10px;
+      padding: 10px;
   }
   
   .hobby-icon {
-    width: 30px;
-    height: 30px;
-    border: 1px solid #333;
-    margin: 2px;
+      width: 30px;
+      height: 30px;
+      border: 1px solid #333;
+      margin: 2px;
   }
   
   .timeline-title {
-    font-size: 15px;
-    margin: 3px 0;
+      font-size: 15px;
+      margin: 3px 0;
   }
   
   .timeline-subtitle {
-    font-size: 13px;
-    margin-bottom: 5px;
+      font-size: 13px;
+      margin-bottom: 5px;
   }
   
   .timeline-description {
-    font-size: 11px;
-    line-height: 1.3;
+      font-size: 11px;
+      line-height: 1.3;
   }
   
   .timeline-date, .timeline-place {
-    font-size: 11px;
-  }
-  
-
-  /* Empêcher les sauts de page indésirables */
-  .section, .timeline-item {
-    page-break-inside: avoid;
-  }
-  
-  /* Optimisation pour les recommandations */
-  .recommendations {
-    display: flex;
-    flex-direction: row;
+      font-size: 11px;
   }
   
   .recommendation {
-    width: 48%;
-    font-size: 11px;
+      width: 48%;
+      font-size: 11px;
   }
   
   .recommendation p {
-    margin-bottom: 3px;
+      margin-bottom: 3px;
   }
 }
