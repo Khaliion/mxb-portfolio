@@ -5,13 +5,14 @@
       flex-direction: column;
   }
   
-  .left-column, .right-column {
+  .left-column {
       width: 100%;
   }
-  
+
   .right-column {
       border-left: none;
       padding: 20px;
+      width: auto;
   }
   
   .name {
