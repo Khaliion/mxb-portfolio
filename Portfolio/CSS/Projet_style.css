@@ -29,7 +29,7 @@ body {
     color: rgb(181, 172, 172);
 }
 
-.lien {
+.link {
     color: white;
     text-decoration: none;
 }
@@ -54,9 +54,6 @@ body {
     font-size: 35px;
 }
 
-.header {
-    text-align: center;
-}
 
 .header1 {
     margin-left: 3%;
@@ -87,7 +84,7 @@ body {
     text-align: justify;
 }
 
-/* Hobbies section */
+/* Loisirs */
 .hobbies {
     padding: 20px;
     display: flex;
@@ -110,7 +107,7 @@ body {
     margin: 5px;
 }
 
-/* Right column */
+/* Colonne de Droite */
 .right-column {
     width: 70%;
     background-color: rgb(255, 255, 255);
@@ -124,7 +121,7 @@ body {
 }
 
 .name span {
-    color: #670886; /* Couleur pour mise en évidence du prénom */
+    color: #670886; 
 }
 
 .title {
@@ -140,17 +137,18 @@ body {
     bottom: -3px;
     width: 100%;
     height: 2px;
-    background-color: #020202; /* Ligne de séparation sous le titre */
+    background-color: #670886; 
 }
 
-.color_grey {
+.header-h2 {
     font-size: 18px;
     color: #666;
 }
 
-/* Section styles */
+/* CSS "section" */
+
 .section {
-    margin-top: 15%;
+    margin-top: 6%;
     margin-bottom: 30px;
 }
 
@@ -159,24 +157,29 @@ body {
     position: relative;
     align-items: center;
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-weight: bold;
 }
 
 .section-title:after {
     content: '';
     position: absolute;
-    left: 0;
-    bottom: -5px; 
+    bottom: 25%;
     width: 100%;
     height: 2px;
-    background-color: black;
+    background-color: #670886;
 }
 
-/* Education and Experience items */
+/* Formation et Exp pro */
+
+.fa-solid{
+    color: #670886;
+}
+
 .timeline-item {
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 8%;
+   
 }
 
 .timeline-dot {
@@ -200,24 +203,35 @@ body {
 }
 
 .timeline-content {
-    margin-left: 15px;
-    flex-grow: 1;
+    width: 70%;
 }
 
-.timeline-date, .timeline-place {
+.timeline-content-gauche {
+    width: 30%;
+}
+
+.timeline-date {
     font-size: 14px;
     color: #666;
     margin-bottom: 5px;
+    margin-left: 10px;
 }
 
 .timeline-place {
     font-style: italic;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+    margin-left: 10px;
 }
 
 .timeline-title {
     font-size: 18px;
     font-weight: bold;
-    margin: 5px 0;
+}
+
+.timeline-title h3{
+    margin-top: 0;
 }
 
 .timeline-subtitle {
@@ -230,24 +244,4 @@ body {
     font-size: 14px;
     color: #777;
     line-height: 1.5;
-}
-
-/* Recommendations */
-.recommendations {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.recommendation {
-    width: 48%;
-}
-
-.recommendation p {
-    font-size: 14px;
-    margin-bottom: 5px;
-}
-
-.recommender-name {
-    font-weight: bold;
 }
