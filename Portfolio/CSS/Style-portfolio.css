@@ -121,6 +121,10 @@ footer a {
     font-size: 11px;
 }
 
+.check_color{
+    color: pink;
+}
+
 /* Style CSS pour page Contact */
 
 .contact h2 {
@@ -200,7 +204,7 @@ footer a {
     font-size: 17px;
 }
 
-/* Style CSS pour page Portfolio */
+/* Style CSS pour page Indec */
 
 .portfolio {
     padding-top: 3%;
@@ -249,27 +253,45 @@ figure:hover figcaption {
 }
 
 
-/*CSS pour Page Index*/
+/*transition_division : patern*/
 
-
-
-.h2-home{
-    padding-top: 2%;
-    font-size: 50px;
+.lines__patern{
+    width: 100%;
+    height: 45px;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 70px;
 }
 
-#color-change1{
-    color: grey;
-    text-shadow: 0 0 4px #facefa, 0 0 5px #facefa, 0 0 10px #facefa, 0 0 10px #facefa;
+
+.lines__patern::after, .lines__patern::before{
+    content: '';
+    position: absolute;
+    margin: auto;
+    height: 2px;
+    background: #ffffff;
+    width: 40%;
+    top: 40%;
 }
 
-.color-change2{
-    color: grey;
+.lines__patern::after{
+    left: 0;
+}
+    
+.lines__patern::before{
+    right: 0;
 }
 
-.image-index img{
-    padding-top: 1%;
-    margin-right: 30px;
-    margin-left: 30px;
-    height: 400px;
+
+
+.daimond__patern{
+    height: 40px;
+    width: 40px;
+    border: 3px solid #ffffff;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    transform: rotate(45deg);
 }
