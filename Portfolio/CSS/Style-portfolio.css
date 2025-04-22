@@ -182,6 +182,10 @@ footer a {
     color: aqua;
 }
 
+.contact_link{
+    text-decoration: none;
+}
+
 /* Style CSS pour page A propos */
 
 .about h2 {
