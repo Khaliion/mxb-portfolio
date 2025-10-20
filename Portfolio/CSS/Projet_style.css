@@ -5,7 +5,7 @@
 :root {
     --color-bg: #e1ddddec; /*Couleur d'arriere plan, background*/
     --color-primary: #c665e6; /*Couleur primaire, la plus utilisée, colonne gauche etc*/
-    --color-secondary: #65247a; /*Couleur secondaire, nuance plus claire*/
+    --color-secondary: #723188; /*Couleur secondaire, nuance plus claire*/
     --color-light-grey: #666; /*Couleur date et lieux dans colonne de droite*/
     --color-timeline-title: #000000; /*Couleur des titres (H3)*/
     --color-timeline-sub: #820ba9; /*couleurs des h4*/
